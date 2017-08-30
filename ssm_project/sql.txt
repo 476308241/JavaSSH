@@ -1,0 +1,23 @@
+CREATE TABLE `t_user` (  
+  `USER_ID` int(11) NOT NULL AUTO_INCREMENT,  
+  `USER_NAME` char(30) NOT NULL,  
+  `USER_PASSWORD` char(10) NOT NULL,  
+  `USER_EMAIL` char(30) NOT NULL,  
+  PRIMARY KEY (`USER_ID`),  
+  KEY `IDX_NAME` (`USER_NAME`)  
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8
+
+
+CREATE TABLE `user` (
+  `uid` varchar(32) NOT NULL,
+  `username` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `name` varchar(20) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
+  `telephone` varchar(20) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `sex` varchar(10) DEFAULT NULL,
+  `state` int(11) DEFAULT NULL,
+  `code` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
