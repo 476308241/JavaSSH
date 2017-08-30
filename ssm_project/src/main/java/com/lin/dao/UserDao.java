@@ -18,7 +18,7 @@ public interface UserDao {
 	 * @return
 	 */
 	public User selectUserById(Integer userId);
-	
+	    
 	  public int addUser(User user);
 
 }
